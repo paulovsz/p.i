@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="HTML/home.html">
+    <style>
+        body{
+            display: block;
+            background-image: url(../IMG/campbell-3ZUsNJhi_Ik-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll, fixed;
+            background-blend-mode: luminosity;
+         }
+         form{
+            display: block;
+            margin: auto;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            background-color: #AEBDCA;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section class="container-fluid mx-auto">
+        <form action="home.html" class="form needs-validation position-absolute top-50 start-50 translate-middle" style="width: 40%;" novalidate>
+            <div class="mb-1 mx-auto" style="width: 80%;"> <br>
+                <label class="form-label text-black" for="validationCustom02">Nome/Razão Social:</label>
+                <input class="form-control" type="text" name="nome" id="validationCustom02"  required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>
+            <div class="mb-1 mx-auto" style="width: 80%;">
+            <label class="form-label text-black" for="validationCustom03">CPF/CNPJ:</label>
+                <input class="form-control" type="text" name="cpf" id="validationCustom03" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>
+            <div class="mb-1 mx-auto" style="width: 80%;">
+                <label class="form-label text-black" for="validationCustom09">E-mail:</label>
+                <input class="form-control" type="email" name="email" id="validationCustom09"  required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>
+           <div class="row mx-auto" style="width: 83%;">
+                <div class="col">
+                    <div class="mb-1">
+                        <label class="form-label text-black" for="validationCustom04">Rua:</label>
+                        <input class="form-control" type="text" name="rua" id="validationCustom04"  required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Preencha o campo!</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-1 mx-auto" style="width: 99%;">
+                        <label class="form-label text-black" for="validationCustom05">Número:</label>
+                        <input class="form-control" type="text" name="numero" id="validationCustom05"  required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Preencha o campo!</div>
+                    </div>
+                </div>
+           </div>
+            <div class="mb-1 mx-auto" style="width: 80%;">
+                <label class="form-label text-black" for="validationCustom06">CEP:</label>
+                <input class="form-control" type="text" name="cep" id="validationCustom06"  required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>                      
+            <div class="mb-1 mx-auto" style="width: 80%;">
+                <label class="form-label text-black" for="validationCustom07">Senha:</label>
+                <input class="form-control" type="password" name="senha" id="validationCustom07"  required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>
+            <div class="mb-3 mx-auto" style="width: 80%;">
+                <label class="form-label text-black" for="validationCustom08">Confirme sua senha:</label>
+                <input class="form-control" type="senha" name="senha" id="validationCustom08"  required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Preencha o campo!</div>
+            </div>
+            </div>
+
+
+            <div class="d-grid mx-auto" style="width: 50%;">
+                <input type="submit" value="Finalizar Cadastro" class="btn btn-outline-dark">
+            </div> <br>
+
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()        
+      </script>
+</body>
+</html>
